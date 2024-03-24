@@ -1,0 +1,2 @@
+# ethica
+Spinoza's Ethics
