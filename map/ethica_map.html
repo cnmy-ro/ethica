@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#EC7063", "id": "ID1", "label": "ID1", "shape": "dot", "title": "By cause of itself I understand that whose essence involves existence, or that whose nature cannot be conceived except as existing."}, {"color": "#EC7063", "id": "ID2", "label": "ID2", "shape": "dot", "title": "That thing is said to be finite in its own kind that can be limited by another of the same nature. For example, a body is called finite because we always conceive another that is greater. Thus a thought is limited by another thought. But a body is not limited by a thought nor a thought by a body."}, {"color": "#EC7063", "id": "ID3", "label": "ID3", "shape": "dot", "title": "By substance I understand what is in itself and is conceived through itself, that is, that whose concept does not require the concept of another thing, from which it must be formed."}, {"color": "#EC7063", "id": "ID4", "label": "ID4", "shape": "dot", "title": "By attribute I understand what the intellect perceives of a substance, as constituting its essence."}, {"color": "#EC7063", "id": "ID5", "label": "ID5", "shape": "dot", "title": "By mode I understand the affections of a substance, or that which is in another through which it is also conceived."}, {"color": "#EC7063", "id": "ID6", "label": "ID6", "shape": "dot", "title": "By God I understand a being absolutely infinite, that is, a substance consisting of an infinity of attributes, of which each one expresses an eternal and infinite essence."}, {"color": "#EC7063", "id": "ID7", "label": "ID7", "shape": "dot", "title": "That thing is called free which exists from the necessity of its nature alone, and is determined to act by itself alone. But a thing is called necessary, or rather compelled, which is determined by another to exist and to produce an effect in a certain and determinate manner."}, {"color": "#EC7063", "id": "ID8", "label": "ID8", "shape": "dot", "title": "By eternity I understand existence itself, insofar as it is conceived to follow necessarily from the definition alone of the eternal thing."}, {"color": "#52BE80", "id": "IA1", "label": "IA1", "shape": "dot", "title": "Whatever is, is either in itself or in another."}, {"color": "#52BE80", "id": "IA2", "label": "IA2", "shape": "dot", "title": "What cannot be conceived through another, must be conceived through itself."}, {"color": "#52BE80", "id": "IA3", "label": "IA3", "shape": "dot", "title": "From a given determinate cause the effect follows necessarily; and conversely, if there is no determinate cause, it is impossible for an effect to follow."}, {"color": "#52BE80", "id": "IA4", "label": "IA4", "shape": "dot", "title": "The knowledge of an effect depends on, and involves, the knowledge of its cause."}, {"color": "#52BE80", "id": "IA5", "label": "IA5", "shape": "dot", "title": "Things that have nothing in common with one another also cannot be understood through one another, or the concept of the one does not involve the concept of the other."}, {"color": "#52BE80", "id": "IA6", "label": "IA6", "shape": "dot", "title": "A true idea must agree with its object."}, {"color": "#52BE80", "id": "IA7", "label": "IA7", "shape": "dot", "title": "If a thing can be conceived as not existing, its essence does not involve existence."}, {"color": "#2E86C1", "id": "IP1", "label": "IP1", "shape": "dot", "title": "A substance is prior in nature to its affections."}, {"color": "#2E86C1", "id": "IP2", "label": "IP2", "shape": "dot", "title": "Two substances having different attributes have nothing in common with one another."}, {"color": "#2E86C1", "id": "IP3", "label": "IP3", "shape": "dot", "title": "If things have nothing in common with one another, one of them cannot be the cause of the other."}, {"color": "#2E86C1", "id": "IP4", "label": "IP4", "shape": "dot", "title": "Two or more distinct things are distinguished from one another, either by a difference in the attributes of the substances or by a difference in their affections;"}, {"color": "#2E86C1", "id": "IP5", "label": "IP5", "shape": "dot", "title": "In Nature there cannot be two or more substances of the same nature or attribute."}, {"color": "#2E86C1", "id": "IP6", "label": "IP6", "shape": "dot", "title": "One substance cannot be produced by another substance."}, {"color": "#AED6F1", "id": "IP6c1", "label": "IP6c1", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP7", "label": "IP7", "shape": "dot", "title": "It pertains to the nature of a substance to exist."}, {"color": "#2E86C1", "id": "IP8", "label": "IP8", "shape": "dot", "title": "Every substance is necessarily infinite."}, {"color": "#2E86C1", "id": "IP9", "label": "IP9", "shape": "dot", "title": "The more reality or being each thing has, the more attributes belong to it."}, {"color": "#2E86C1", "id": "IP10", "label": "IP10", "shape": "dot", "title": "Each attribute of a substance must be conceived through itself."}, {"color": "#2E86C1", "id": "IP11", "label": "IP11", "shape": "dot", "title": "God, or a substance consisting of infinite attributes, each of which expresses eternal and infinite essence, necessarily exists."}, {"color": "#2E86C1", "id": "IP12", "label": "IP12", "shape": "dot", "title": "No attribute of a substance can be truly conceived from which it follows that the substance can be divided."}, {"color": "#2E86C1", "id": "IP13", "label": "IP13", "shape": "dot", "title": "A substance which is absolutely infinite is indivisible."}, {"color": "#AED6F1", "id": "IP13c1", "label": "IP13c1", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP14", "label": "IP14", "shape": "dot", "title": "Except God, no substance can be or be conceived."}, {"color": "#AED6F1", "id": "IP14c1", "label": "IP14c1", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP14c2", "label": "IP14c2", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP15", "label": "IP15", "shape": "dot", "title": "Whatever is, is in God, and nothing can be or be conceived without God."}, {"color": "#2E86C1", "id": "IP16", "label": "IP16", "shape": "dot", "title": "From the necessity of the divine nature there must follow infinitely many things in infinitely many modes, (i.e., everything which can fall under an infinite intellect)."}, {"color": "#AED6F1", "id": "IP16c1", "label": "IP16c1", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP16c2", "label": "IP16c2", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP16c3", "label": "IP16c3", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP17", "label": "IP17", "shape": "dot", "title": "God acts from the laws of his nature alone, and is compelled by no one."}, {"color": "#AED6F1", "id": "IP17c1", "label": "IP17c1", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP17c2", "label": "IP17c2", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP18", "label": "IP18", "shape": "dot", "title": "God is the immanent, not the transitive, cause of all things."}, {"color": "#2E86C1", "id": "IP19", "label": "IP19", "shape": "dot", "title": "God is eternal, or all Gods attributes are eternal."}, {"color": "#2E86C1", "id": "IP20", "label": "IP20", "shape": "dot", "title": "Gods existence and his essence are one and the same."}, {"color": "#AED6F1", "id": "IP20c1", "label": "IP20c1", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP20c2", "label": "IP20c2", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP21", "label": "IP21", "shape": "dot", "title": "All the things which follow from the absolute nature of any of Gods attributes have always had to exist and be infinite, or are, through the same attribute, eternal and infinite."}, {"color": "#2E86C1", "id": "IP22", "label": "IP22", "shape": "dot", "title": "Whatever follows from some attribute of God insofar as it is modified by a modification which, through the same attribute, exists necessarily and is infinite, must also exist necessarily and be infinite."}, {"color": "#2E86C1", "id": "IP23", "label": "IP23", "shape": "dot", "title": "Every mode which exists necessarily and is infinite has necessarily had to follow either from the absolute nature of some attribute of God, or from some attribute, modified by a modification which exists necessarily and is infinite."}, {"color": "#2E86C1", "id": "IP24", "label": "IP24", "shape": "dot", "title": "The essence of things produced by God does not involve existence."}, {"color": "#AED6F1", "id": "IP24c1", "label": "IP24c1", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP25", "label": "IP25", "shape": "dot", "title": "God is the efficient cause, not only of the existence of things, but also of their essence."}, {"color": "#AED6F1", "id": "IP25c1", "label": "IP25c1", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP26", "label": "IP26", "shape": "dot", "title": "A thing which has been determined to produce an effect has necessarily been determined in this way by God; and one which has not been determined by God cannot determine itself to produce an effect."}, {"color": "#2E86C1", "id": "IP27", "label": "IP27", "shape": "dot", "title": "A thing which has been determined by God to produce an effect, cannot render itself undetermined."}, {"color": "#2E86C1", "id": "IP28", "label": "IP28", "shape": "dot", "title": "Every singular thing, or any thing which is finite and has a determinate existence, can neither exist nor be determined to produce an effect unless it is determined to exist and produce an effect by another cause, which is also finite and has a determinate existence; and again, this cause also can neither exist nor be determined to produce an effect unless it is determined to exist and produce an effect by another, which is also finite and has a determinate existence, and so on, to infinity."}, {"color": "#2E86C1", "id": "IP29", "label": "IP29", "shape": "dot", "title": "In nature there is nothing contingent, but all things have been determined from the necessity of the divine nature to exist and produce an effect in a certain way."}, {"color": "#2E86C1", "id": "IP30", "label": "IP30", "shape": "dot", "title": "An actual intellect, whether finite or infinite, must comprehend Gods attributes and Gods affections, and nothing else."}, {"color": "#2E86C1", "id": "IP31", "label": "IP31", "shape": "dot", "title": "The actual intellect, whether finite or infinite, like will, desire, love, and the like, must be referred to Natura naturata, not to Natura naturans."}, {"color": "#2E86C1", "id": "IP32", "label": "IP32", "shape": "dot", "title": "The will cannot be called a free cause, but only a necessary one."}, {"color": "#AED6F1", "id": "IP32c1", "label": "IP32c1", "shape": "dot", "title": ""}, {"color": "#AED6F1", "id": "IP32c2", "label": "IP32c2", "shape": "dot", "title": ""}, {"color": "#2E86C1", "id": "IP33", "label": "IP33", "shape": "dot", "title": "Things could have been produced by God in no other way, and in no other order than they have been produced."}, {"color": "#2E86C1", "id": "IP34", "label": "IP34", "shape": "dot", "title": "God\u0027s power is his essence itself."}, {"color": "#2E86C1", "id": "IP35", "label": "IP35", "shape": "dot", "title": "Whatever we conceive to be in God\u0027s power, necessarily exists."}, {"color": "#2E86C1", "id": "IP36", "label": "IP36", "shape": "dot", "title": "Nothing exists from whose nature some effect does not follow."}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ID3", "to": "IP1"}, {"arrows": "to", "from": "ID5", "to": "IP1"}, {"arrows": "to", "from": "ID3", "to": "IP2"}, {"arrows": "to", "from": "IA5", "to": "IP3"}, {"arrows": "to", "from": "IA4", "to": "IP3"}, {"arrows": "to", "from": "IA1", "to": "IP4"}, {"arrows": "to", "from": "ID3", "to": "IP4"}, {"arrows": "to", "from": "ID5", "to": "IP4"}, {"arrows": "to", "from": "ID4", "to": "IP4"}, {"arrows": "to", "from": "IP4", "to": "IP5"}, {"arrows": "to", "from": "IP1", "to": "IP5"}, {"arrows": "to", "from": "ID3", "to": "IP5"}, {"arrows": "to", "from": "IA6", "to": "IP5"}, {"arrows": "to", "from": "IP5", "to": "IP6"}, {"arrows": "to", "from": "IP2", "to": "IP6"}, {"arrows": "to", "from": "IP3", "to": "IP6"}, {"arrows": "to", "from": "IP6", "to": "IP6c1"}, {"arrows": "to", "from": "IA1", "to": "IP6c1"}, {"arrows": "to", "from": "ID3", "to": "IP6c1"}, {"arrows": "to", "from": "ID5", "to": "IP6c1"}, {"arrows": "to", "from": "IP6", "to": "IP6c1"}, {"arrows": "to", "from": "IA4", "to": "IP6c1"}, {"arrows": "to", "from": "IP6c1", "to": "IP7"}, {"arrows": "to", "from": "ID1", "to": "IP7"}, {"arrows": "to", "from": "IP5", "to": "IP8"}, {"arrows": "to", "from": "IP7", "to": "IP8"}, {"arrows": "to", "from": "ID2", "to": "IP8"}, {"arrows": "to", "from": "ID4", "to": "IP9"}, {"arrows": "to", "from": "ID4", "to": "IP10"}, {"arrows": "to", "from": "ID3", "to": "IP10"}, {"arrows": "to", "from": "ID6", "to": "IP11"}, {"arrows": "to", "from": "IA1", "to": "IP11"}, {"arrows": "to", "from": "IA7", "to": "IP11"}, {"arrows": "to", "from": "IP2", "to": "IP11"}, {"arrows": "to", "from": "IP7", "to": "IP11"}, {"arrows": "to", "from": "ID4", "to": "IP12"}, {"arrows": "to", "from": "IP2", "to": "IP12"}, {"arrows": "to", "from": "IP5", "to": "IP12"}, {"arrows": "to", "from": "IP6", "to": "IP12"}, {"arrows": "to", "from": "IP7", "to": "IP12"}, {"arrows": "to", "from": "IP8", "to": "IP12"}, {"arrows": "to", "from": "IP10", "to": "IP12"}, {"arrows": "to", "from": "IP5", "to": "IP13"}, {"arrows": "to", "from": "IP11", "to": "IP13"}, {"arrows": "to", "from": "IP13", "to": "IP13c1"}, {"arrows": "to", "from": "IP8", "to": "IP13c1"}, {"arrows": "to", "from": "ID6", "to": "IP14"}, {"arrows": "to", "from": "IP11", "to": "IP14"}, {"arrows": "to", "from": "IP5", "to": "IP14"}, {"arrows": "to", "from": "IP14", "to": "IP14c1"}, {"arrows": "to", "from": "ID6", "to": "IP14c1"}, {"arrows": "to", "from": "IP10", "to": "IP14c1"}, {"arrows": "to", "from": "IP14", "to": "IP14c2"}, {"arrows": "to", "from": "IA1", "to": "IP14c2"}, {"arrows": "to", "from": "IP14", "to": "IP15"}, {"arrows": "to", "from": "ID3", "to": "IP15"}, {"arrows": "to", "from": "ID5", "to": "IP15"}, {"arrows": "to", "from": "IA1", "to": "IP15"}, {"arrows": "to", "from": "ID6", "to": "IP16"}, {"arrows": "to", "from": "IP16", "to": "IP16c1"}, {"arrows": "to", "from": "IP16", "to": "IP16c2"}, {"arrows": "to", "from": "IP16", "to": "IP16c3"}, {"arrows": "to", "from": "IP16", "to": "IP17"}, {"arrows": "to", "from": "IP15", "to": "IP17"}, {"arrows": "to", "from": "IP17", "to": "IP17c1"}, {"arrows": "to", "from": "IP17", "to": "IP17c2"}, {"arrows": "to", "from": "IP11", "to": "IP17c2"}, {"arrows": "to", "from": "IP14c1", "to": "IP17c2"}, {"arrows": "to", "from": "IP17", "to": "IP17c2"}, {"arrows": "to", "from": "ID7", "to": "IP17c2"}, {"arrows": "to", "from": "IP15", "to": "IP18"}, {"arrows": "to", "from": "IP16c1", "to": "IP18"}, {"arrows": "to", "from": "IP14", "to": "IP18"}, {"arrows": "to", "from": "ID3", "to": "IP18"}, {"arrows": "to", "from": "ID6", "to": "IP19"}, {"arrows": "to", "from": "IP11", "to": "IP19"}, {"arrows": "to", "from": "IP7", "to": "IP19"}, {"arrows": "to", "from": "ID8", "to": "IP19"}, {"arrows": "to", "from": "ID4", "to": "IP19"}, {"arrows": "to", "from": "IP19", "to": "IP20"}, {"arrows": "to", "from": "ID8", "to": "IP20"}, {"arrows": "to", "from": "ID4", "to": "IP20"}, {"arrows": "to", "from": "IP20", "to": "IP20c1"}, {"arrows": "to", "from": "IP20", "to": "IP20c2"}, {"arrows": "to", "from": "IP20", "to": "IP20c2"}, {"arrows": "to", "from": "IP11", "to": "IP21"}, {"arrows": "to", "from": "ID2", "to": "IP21"}, {"arrows": "to", "from": "IP20c2", "to": "IP21"}, {"arrows": "to", "from": "ID5", "to": "IP23"}, {"arrows": "to", "from": "IP15", "to": "IP23"}, {"arrows": "to", "from": "ID8", "to": "IP23"}, {"arrows": "to", "from": "ID6", "to": "IP23"}, {"arrows": "to", "from": "IP19", "to": "IP23"}, {"arrows": "to", "from": "IP21", "to": "IP23"}, {"arrows": "to", "from": "IP22", "to": "IP23"}, {"arrows": "to", "from": "ID1", "to": "IP24"}, {"arrows": "to", "from": "IP24", "to": "IP24c1"}, {"arrows": "to", "from": "IP14c1", "to": "IP24c1"}, {"arrows": "to", "from": "IA4", "to": "IP25"}, {"arrows": "to", "from": "IP15", "to": "IP25"}, {"arrows": "to", "from": "IP25", "to": "IP25c1"}, {"arrows": "to", "from": "IP15", "to": "IP25c1"}, {"arrows": "to", "from": "ID5", "to": "IP25c1"}, {"arrows": "to", "from": "IP25", "to": "IP26"}, {"arrows": "to", "from": "IP16", "to": "IP26"}, {"arrows": "to", "from": "IA3", "to": "IP27"}, {"arrows": "to", "from": "IP26", "to": "IP28"}, {"arrows": "to", "from": "IP24c1", "to": "IP28"}, {"arrows": "to", "from": "IP21", "to": "IP28"}, {"arrows": "to", "from": "IA1", "to": "IP28"}, {"arrows": "to", "from": "ID3", "to": "IP28"}, {"arrows": "to", "from": "ID5", "to": "IP28"}, {"arrows": "to", "from": "IP25c1", "to": "IP28"}, {"arrows": "to", "from": "IP22", "to": "IP28"}, {"arrows": "to", "from": "IP15", "to": "IP29"}, {"arrows": "to", "from": "IP11", "to": "IP29"}, {"arrows": "to", "from": "IP16", "to": "IP29"}, {"arrows": "to", "from": "IP21", "to": "IP29"}, {"arrows": "to", "from": "IP27", "to": "IP29"}, {"arrows": "to", "from": "IP24c1", "to": "IP29"}, {"arrows": "to", "from": "IP26", "to": "IP29"}, {"arrows": "to", "from": "IA6", "to": "IP30"}, {"arrows": "to", "from": "IP14c1", "to": "IP30"}, {"arrows": "to", "from": "IP15", "to": "IP30"}, {"arrows": "to", "from": "ID5", "to": "IP31"}, {"arrows": "to", "from": "IP15", "to": "IP31"}, {"arrows": "to", "from": "ID6", "to": "IP31"}, {"arrows": "to", "from": "IP28", "to": "IP32"}, {"arrows": "to", "from": "IP23", "to": "IP32"}, {"arrows": "to", "from": "ID7", "to": "IP32"}, {"arrows": "to", "from": "IP32", "to": "IP32c1"}, {"arrows": "to", "from": "IP32", "to": "IP32c2"}, {"arrows": "to", "from": "IP29", "to": "IP32c2"}, {"arrows": "to", "from": "IP16", "to": "IP33"}, {"arrows": "to", "from": "IP29", "to": "IP33"}, {"arrows": "to", "from": "IP11", "to": "IP33"}, {"arrows": "to", "from": "IP14c1", "to": "IP33"}, {"arrows": "to", "from": "IP11", "to": "IP34"}, {"arrows": "to", "from": "IP16", "to": "IP34"}, {"arrows": "to", "from": "IP16c1", "to": "IP34"}, {"arrows": "to", "from": "IP34", "to": "IP35"}, {"arrows": "to", "from": "IP25c1", "to": "IP36"}, {"arrows": "to", "from": "IP34", "to": "IP36"}, {"arrows": "to", "from": "IP16", "to": "IP36"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
