@@ -21,7 +21,6 @@ Secondary sources:
 
 
 ## Map
-- Abbreviation scheme based on: *Nadler - Spinoza's Ethics: An Introduction*
 - Scholia and the references in them are ignored in the logical graph
 
 
