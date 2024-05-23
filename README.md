@@ -21,7 +21,8 @@ Secondary sources:
 
 
 ## Map
-- Scholia and the references in them are ignored in the logical graph
+- The logical graph reflects the way Spinoza derives the propositions in the demonstrations
+- Scholia and the references therein are ignored in the logical graph
 
 
 ## Automata Dialogi
