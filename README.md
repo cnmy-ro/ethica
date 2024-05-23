@@ -17,12 +17,17 @@ List of translations:
 Secondary sources:
 - Nadler - Spinoza's Ethics: An Introduction
 - Nadler - Spinoza: A Life
-- Stuart Hampshire - Spinoza
+- Hampshire - Spinoza
 
 
 ## Map
+- Overall topology, proof chain for a given proposition, etc.
 - The logical graph reflects the way Spinoza derives the propositions in the demonstrations
 - Scholia and the references therein are ignored in the logical graph
+- TODO: 
+	- [ ] add logical graph and text for parts 4 and 5
+	- [ ] add text for all corollaries
+	- [ ] add proof chain feature
 
 
-## Automata Dialogi
+## Spiritual Automaton
