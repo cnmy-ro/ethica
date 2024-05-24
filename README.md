@@ -24,9 +24,7 @@ Secondary sources:
 - Overall topology, proof chain for a given proposition, etc.
 - The logical graph reflects the way Spinoza derives the propositions in the demonstrations
 - Scholia and the references therein are ignored in the logical graph
-- TODO: 
-	- [ ] add logical graph and text for parts 4 and 5
-	- [ ] nicely display text in the map
+- TODO:
 	- [ ] add text for all corollaries
 	- [ ] add proof chain feature
 

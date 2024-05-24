@@ -31,7 +31,7 @@
 1P11: God, or a substance consisting of infinite attributes, each of which expresses eternal and infinite essence, necessarily exists.
 1P12: No attribute of a substance can be truly conceived from which it follows that the substance can be divided.
 1P13: A substance which is absolutely infinite is indivisible.
-1P14 : Except God, no substance can be or be conceived.
+1P14: Except God, no substance can be or be conceived.
 1P15: Whatever is, is in God, and nothing can be or be conceived without God.
 1P16: From the necessity of the divine nature there must follow infinitely many things in infinitely many modes, (i.e., everything which can fall under an infinite intellect).
 1P17: God acts from the laws of his nature alone, and is compelled by no one.
@@ -87,15 +87,15 @@
 2P11: The first thing which constitutes the actual being of a human Mind is nothing but the idea of a singular thing which actually exists.
 2P12: Whatever happens in the object of the idea constituting the human mind must be perceived by the human mind, or there will necessarily be an idea of that thing in the mind; that is, if the object of the idea constituting a human mind is a body, nothing can happen in that body which is not perceived by the mind.
 2P13: The object of the idea constituting the human mind is the body, or a certain mode of extension which actually exists, and nothing else.
-2P13A1: All bodies either move or are at rest.
-2P13A2: Each body moves now more slowly, now more quickly.
+2A1': All bodies either move or are at rest.
+2A2': Each body moves now more slowly, now more quickly.
 2P13L1: Bodies are distinguished from one another by reason of motion and rest, speed and slowness, and not by reason of substance.
 2P13L2: All bodies agree in certain things.
 2P13L3: A body which moves or is at rest must be determined to motion or rest by another body, which has also been determined to motion or rest by another, and that again by another, and so on, to infinity.
-2P13L3A1: All modes by which a body is affected by another body follow both from the nature of the body affected and at the same time from the nature of the affecting body, so that one and the same body may be moved differently according to differences in the nature of the bodies moving it. And conversely, different bodies may be moved differently by one and the same body.
-2P13L3A2: When a body in motion strikes against another which is at rest and cannot give way, then it is reflected, so that it continues to move, and the angle of the line of the reflected motion with the surface of the body at rest which it struck against will be equal to the angle which the line of the incident motion makes with the same surface.
-2P13L3D1: When a number of bodies, whether of the same or of different size, are so constrained by other bodies that they lie upon one another, or if they so move, whether with the same degree or different degrees of speed, that they communicate their motions to each other in a certain fixed manner, we shall say that those bodies are united with one another and that they all together compose one body or individual, which is distinguished from the others by this union of bodies.
-2P13L3A3: As the parts of an individual, or composite body, lie upon one another over a larger or smaller surface, so they can be forced to change their position with more or less difficulty; and consequently the more or less will be the difficulty of bringing it about that the individual changes its shape. And therefore the bodies whose parts lie upon one another over a large surface, I shall call hard-, those whose parts lie upon one another over a small surface, I shall call soft; and finally those whose parts are in motion, I shall call fluid.
+2A1'': All modes by which a body is affected by another body follow both from the nature of the body affected and at the same time from the nature of the affecting body, so that one and the same body may be moved differently according to differences in the nature of the bodies moving it. And conversely, different bodies may be moved differently by one and the same body.
+2A2'': When a body in motion strikes against another which is at rest and cannot give way, then it is reflected, so that it continues to move, and the angle of the line of the reflected motion with the surface of the body at rest which it struck against will be equal to the angle which the line of the incident motion makes with the same surface.
+2D1': When a number of bodies, whether of the same or of different size, are so constrained by other bodies that they lie upon one another, or if they so move, whether with the same degree or different degrees of speed, that they communicate their motions to each other in a certain fixed manner, we shall say that those bodies are united with one another and that they all together compose one body or individual, which is distinguished from the others by this union of bodies.
+2A3'': As the parts of an individual, or composite body, lie upon one another over a larger or smaller surface, so they can be forced to change their position with more or less difficulty; and consequently the more or less will be the difficulty of bringing it about that the individual changes its shape. And therefore the bodies whose parts lie upon one another over a large surface, I shall call hard-, those whose parts lie upon one another over a small surface, I shall call soft; and finally those whose parts are in motion, I shall call fluid.
 2P13L4: "If, of a body, or of an individual, which is composed of a number of bodies, some are removed, and at the same time as many others of the same nature take their place, the [NS: body, or the] individual will retain its nature, as before, without any change of its form."
 2P13L5: If the parts composing an individual become greater or less, but in such a proportion that they all keep the same ratio of motion and rest to each other as before, then the individual will likewise retain its nature, as before, without any change of form.
 2P13L6: If certain bodies composing an individual are compelled to alter the motion they have from one direction to another, but so that they can continue their 11/101 motions and communicate them to each other in the same ratio as before, the individual will likewise retain its nature, without any change of form.
@@ -142,6 +142,7 @@
 2P47: The human mind has an adequate knowledge of Gods eternal and infinite essence.
 2P48: In the mind there is no absolute, or free, will, but the mind is determined to will this or that by a cause which is also determined by another, and this again by another, and so to infinity.
 2P49: In the mind there is no volition, or affirmation and negation, except that which the idea involves insofar as it is an idea.
+
 
 
 # ---
@@ -219,7 +220,7 @@
 3Aff3: Sadness is a man's passage from a greater to a lesser perfection
 3Aff4: Wonder is an imagination of a thing in which the mind remains fixed because this singular imagination has no connection with the others. (See P52 and P52S.)
 3Aff5: Disdain is an imagination of a thing which touches the mind so little that the thing's presence moves the mind to imagining more what is not in it than what is. (See P52S).
-3Aff6: Love is a joy, accompanied by the idea of an external cause
+3Aff6: Love is a joy, accompanied by the idea of an external cause.
 3Aff7: Hate is a sadness, accompanied by the idea of an external cause.
 3Aff8: Inclination is a joy accompanied by the idea of a thing which is the accidental cause of joy.
 3Aff9: Aversion is a sadness accompanied by the idea of something which is the accidental cause of sadness. (On this see P15S.)
@@ -262,3 +263,145 @@
 3Aff46: Drunkenness is an immoderate desire for and love of drinking.
 3Aff47: Greed is an immoderate desire for and love of wealth.
 3Aff48: Lust is also a desire for and love of joining one body to another.
+3D1': An affect which is called a passion of the mind is a confused idea, by which the mind affirms of its body, or of some part of it, a greater or lesser force of existing than before, which, when it is given, determines the mind to think of this rather than that.
+
+
+
+# ---
+# Part 4: Of Human Bondage, or the Powers of the Affects
+
+4D1: By good I shall understand what we certainly know to be useful to us.
+4D2: By evil, however, I shall understand what we certainly know prevents us from being masters of some good.
+4D3: I call singular things contingent insofar as we find nothing, while we attend only to their essence, which necessarily posits their existence or which necessarily excludes it.
+4D4: I call the same singular things possible, insofar as, while we attend to the causes from which they must be produced, we do not know whether those causes are determined to produce them.
+4D5: By opposite affects I shall understand, in what follows, those which pull a man differently, although they are of the same genus—such as gluttony and greed, which are species of love, and are opposite, not by nature, but accidentally.
+4D6: I have explained in IIIP18S1 and S2 what I shall understand by an affect toward a future thing, a present one, and a past.
+4D7: By the end for the sake of which we do something I understand appetite.
+4D8: By virtue and power I understand the same thing, that is (by IIIP7), virtue, insofar as it is related to man, is the very essence, or nature, of man, insofar as he has the power of bringing about certain things, which can be understood through the laws of his nature alone.
+
+4A1: There is no singular thing in Nature than which there is not another more powerful and stronger. Whatever one is given, there is another more powerful by which the first can be destroyed.
+
+4P1: Nothing positive which a false idea has is removed by the presence of the true insofar as it is true.
+4P2: We are acted on, insofar as we are a part of Nature, which cannot be conceived through itself without the others.
+4P3: The force by which a man perseveres in existing is limited, and infinitely surpassed by the power of external causes.
+4P4: It is impossible that a man should not be a part of Nature, and that he should be able to undergo no changes except those which can be understood through his own nature alone, and of which he is the adequate cause.
+4P5: The force and growth of any passion, and its perseverance in existing, are not defined by the power by which we strive to persevere in existing, but by the power of an external cause compared with our own.
+4P6: The force of any passion, or affect, can surpass the other actions, or power, of a man, so that the affect stubbornly clings to the man.
+4P7: An affect cannot be restrained or taken away except by an affect opposite to, and stronger than, the affect to be restrained.
+4P8: The knowledge of good and evil is nothing but an affect of joy or sadness, insofar as we are conscious of it.
+4P9: An affect whose cause we imagine to be with us in the present is stronger than if we did not imagine it to be with us.
+4P10: We are affected more intensely toward a future thing which we imagine will quickly be present, than if we imagined the time when it will exist to be further from the present. We are also affected more intensely by the memory of a thing we imagine to be not long past, than if we imagined it to be long past.
+4P11: An affect toward a thing we imagine as necessary is more intense, other things equal, than one toward a thing we imagine as possible or contingent, or not necessary.
+4P12: An affect toward a thing which we know does not exist in the present, and which we imagine as possible, is more intense, other things equal, than one toward a contingent thing.
+4P13: An affect toward a contingent thing which we know does not exist in the present is milder, other things equal, than an affect toward a past thing.
+4P14: No affect can be restrained by the true knowledge of good and evil insofar as it is true, but only insofar as it is considered as an affect.
+4P15: A desire which arises from a true knowledge of good and evil can be extinguished or restrained by many other desires which arise from affects by which we are tormented.
+4P16: A desire which arises from a true knowledge of good and evil, insofar as this knowledge concerns the future, can be quite easily restrained or extinguished by a desire for the pleasures of the moment.
+4P17: A desire which arises from a true knowledge of good and evil, insofar as this concerns contingent things, can be restrained much more easily still by a desire for things which are present.
+4P18: A desire which arises from joy is stronger, other things equal, than one which arises from sadness.
+4P19: From the laws of his own nature, everyone necessarily wants, or is repelled by, what he judges to be good or evil.
+4P20: The more each one strives, and is able, to seek his own advantage, that is, to preserve his being, the more he is endowed with virtue; conversely, insofar as each one neglects his own advantage, that is, neglects to preserve his being, he lacks power.
+4P21: No one can desire to be blessed, to act well and to live well, unless at the same time he desires to be, to act, and to live, that is, to actually exist.
+4P22: No virtue can be conceived prior to this [virtue] (viz. the striving to preserve oneself).
+4P23: A man cannot be said absolutely to act from virtue insofar as he is determined to do something because he has inadequate ideas, but only insofar as he is determined because he understands.
+4P24: Acting absolutely from virtue is nothing else in us but acting, living, and preserving our being (these three signify the same thing) by the guidance of reason, from the foundation of seeking ones own advantage.
+4P25: No one strives to preserve his being for the sake of anything else.
+4P26: What we strive for from reason is nothing but understanding; nor does the mind, insofar as it uses reason, judge anything else useful to itself except what leads to understanding 
+4P27: We know nothing to be certainly good or evil, except what really leads to understanding or what can prevent us from understanding.
+4P28: Knowledge of God is the minds greatest good; its greatest virtue is to know God.
+4P29: Any singular thing whose nature is entirely different from ours can neither aid nor restrain our power of acting, and absolutely, no thing can be either good or evil for us, unless it has something in common with us.
+4P30: No thing can be evil through what it has in common with our nature; but insofar as it is evil for us, it is contrary to us.
+4P31: Insofar as a thing agrees with our nature, it is necessarily good.
+4P32: Insofar as men are subject to passions, they cannot be said to agree in nature.
+4P33: Men can disagree in nature insofar as they are torn by affects which are passions; and to that extent also one and the same man is changeable and inconstant.
+4P34: Insofar as men are torn by affects which are passions, they can be contrary to one another.
+4P35: Only insofar as men live according to the guidance of reason, must they always agree in nature.
+4P36: The greatest good of those who seek virtue is common to all, and can be enjoyed by all equally.
+4P37: The good which everyone who seeks virtue wants for himself he also desires for other men; and this desire is greater as his knowledge of God is greater.
+4P38: Whatever so disposes the human body that it can be affected in a great many ways, or renders it capable of affecting external bodies in a great many ways, is useful to man; the more it renders the body capable of being affected in a great many ways, or of affecting other bodies, the more useful it is; on the other hand, what renders the body less capable of these things is harmful.
+4P39: Those things are good which bring about the preservation of the proportion of motion and rest the human bodys parts have to one another; on the other hand, those things are evil which bring it about that the parts of the human body have a different proportion of motion and rest to one another.
+4P40: Things which are of assistance to the common society of men, or which bring it about that men live harmoniously, are useful; those, on the other hand, are evil which bring discord to the state.
+4P41: Joy is not directly evil, but good; sadness, on the other hand, is directly evil.
+4P42: Cheerfulness cannot be excessive, but is always good; melancholy, on the other hand, is always evil.
+4P43: Pleasure can be excessive and evil, whereas pain can be good insofar as the pleasure, or joy, is evil.
+4P44: Love and desire can be excessive.
+4P45: Hate can never be good.
+4P46: He who lives according to the guidance of reason strives, as far as he can, to repay the others hate, anger, and disdain toward him, with love, or nobility.
+4P47: Affects of hope and fear cannot be good of themselves.
+4P48: Affects of over estimation and scorn are always evil.
+4P49: Over estimation easily makes the man who is overestimated proud.
+4P50: Pity, in a man who lives according to the guidance of reason, is evil of itself and useless.
+4P51: Favor is not contrary to reason, but can agree with it and arise from it.
+4P52: Self-esteem can arise from reason, and only that self-esteem which does arise from reason is the greatest there can be.
+4P53: Humility is not a virtue, or does not arise from reason.
+4P54: Repentance is not a virtue, or does not arise from reason; instead, he who repents what he has done is twice wretched, or lacking in power.
+4P55: Either very great pride or very great despondency is very great ignorance of oneself.
+4P56: Either very great pride or very great despondency indicates very great weakness of mind.
+4P57: The proud man loves the presence of parasites, or flatterers, but hates the presence of the noble.
+4P58: Love of esteem is not contrary to reason, but can arise from it.
+4P59: To every action to which we are determined from an affect which is a passion, we can be determined by reason, without that affect.
+4P60: A desire arising from either a joy or a sadness related to one, or several, but not to all parts of the body, has no regard for the advantage of the whole man.
+4P61: A desire which arises from reason cannot be excessive.
+4P62: Insofar as the mind conceives things from the dictate of reason, it is affected equally, whether the idea is of a future or past thing, or of a present one.
+4P63: He who is guided by fear, and does good to avoid evil, is not guided by reason.
+4P64: Knowledge of evil is an inadequate knowledge.
+4P65: From the guidance of reason, we shall follow the greater of two goods or the lesser of two evils.
+4P66: From the guidance of reason we want a greater future good in preference to a lesser present one, and a lesser present evil in preference to a greater future one.
+4P67: A free man thinks of nothing less than of death, and his wisdom is a meditation on life, not on death.
+4P68: If men were born free, they would form no concept of good and evil so long as they remained free.
+4P69: The virtue of a free man is seen to be as great in avoiding dangers as in overcoming them.
+4P70: A free man who lives among the ignorant strives, as far as he can, to avoid their favors.
+4P71: Only free men are very thankful to one another.
+4P72: A free man always acts honestly, not deceptively.
+4P73: A man who is guided by reason is more free in a state, where he lives according to a common decision, than in solitude, where he obeys only himself
+
+
+
+# ---
+# Part 5: Of the Power of the Intellect, or on Human Freedom
+
+5A1: If two contrary actions are aroused in the same subject, a change will have to occur, either in both of them, or in one only, until they cease to be contrary.
+5A2: The power of an effect is defined by the power of its cause, insofar as its essence is explained or defined by the essence of its cause.
+
+5P1: In just the same way as thoughts and ideas of things are ordered and connected in the mind, so the affections of the body, or images of things are ordered and connected in the body
+5P2: If we separate emotions, or affects, from the thought of an external cause, and join them to other thoughts, then the love, or hate, toward the external cause is destroyed, as are the vacillations of mind arising from these affects.
+5P3: An affect which is a passion ceases to be a passion as soon as we form a clear and distinct idea of it.
+5P4: There is no affection of the body of which we cannot form a clear and distinct concept.
+5P5: The greatest affect of all, other things equal, is one toward a thing we imagine simply, and neither as necessary, nor as possible, nor as contingent.
+5P6: Insofar as the mind understands all things as necessary, it has a greater power over the affects, or is less acted on by them.
+5P7: Affects arising from or aroused by reason are, if we take account of time, more powerful than those related to singular things we regard as  absent.
+5P8: The more an affect arises from a number of causes concurring together, the greater it is.
+5P9: If an affect is related to more and different causes which the mind considers together with the affect itself it is less harmful, we are less acted on by it, and we are affected less toward each cause, than is the case with another, equally great affect, which is related only to one cause, or to fewer causes.
+5P10: So long as we are not torn by affects contrary to our nature, we have the power of ordering and connecting the affections of the body according to the order of the intellect.
+5P11: As an image is related to more things, the more frequent it is, or the more often it flourishes, and the more it engages the mind.
+5P12: The images of things are more easily joined to images related to things we understand clearly and distinctly than to other images.
+5P13: The more an image is joined with other images, the more often it flourishes.
+5P14: The mind can bring it about that all the bodys affections, or images of things, are related to the idea of God.
+5P15: He who understands himself and his affects clearly and distinctly loves God, and does so the more, the more he understands himself and his affects.
+5P16: This love toward God must engage the mind most.
+5P17: God is without passions, and is not affected with any affect of joy or sadness.
+5P18: No one can hate God.
+5P19: He who loves God cannot strive that God should love him in return.
+5P20: This love toward God cannot be tainted by an affect of envy or jealousy; instead, the more men we imagine to be joined to God by the same bond of love, the more it is encouraged.
+5P21: The mind can neither imagine anything, nor recollect past things, except while the body endures.
+5P22: Nevertheless, in God there is necessarily an idea that expresses the essence of this or that human body, under a species of eternity.
+5P23: The human mind cannot be absolutely destroyed with the body, but something of it remains which is eternal.
+5P24: The more we understand singular things, the more we understand God.
+5P25: The greatest striving of the mind, and its greatest virtue is understanding things by the third kind of knowledge.
+5P26: The more the mind is capable of understanding things by the third kind of knowledge, the more it desires to understand them by this kind of knowledge.
+5P27: The greatest satisfaction of mind there can be arises from this third kind of knowledge.
+5P28: The striving, or desire, to know things by the third kind of knowledge cannot arise from the first kind of knowledge, but can indeed arise from the second.
+5P29: Whatever the mind understands under a species of eternity, it understands not from the fact that it conceives the body s present actual existence, but from the fact that it conceives the bodys essence under a species of eternity.
+5P30: Insofar as our mind knows itself and the body under a species of eternity, it necessarily has knowledge of God, and knows that it is in God and is conceived through God.
+5P31: The third kind of knowledge depends on the mind, as on a formal cause, insofar as the mind itself is eternal.
+5P32: Whatever we understand by the third kind of knowledge we take pleasure in, and our pleasure is accompanied by the idea of God as a cause.
+5P33: The intellectual love of God, which arises from the third kind of knowledge, is eternal.
+5P34: Only while the body endures is the mind subject to affects which are related to the passions.
+5P35: God loves himself with an infinite intellectual love.
+5P36: The minds intellectual love of God is the very love of God by which God loves himself not insofar as he is infinite, but insofar as he can be explained by the human minds essence, considered under a species of eternity; that is, the minds intellectual love of God is part of the infinite love by which God loves himself.
+5P37: There is nothing in Nature which is contrary to this intellectual love, or which can take it away.
+5P38: The more the mind understands things by the second and third kind of knowledge, the less it is acted on by affects which are evil, and the less it fears death.
+5P39: He who has a body capable of a great many things has a mind whose greatest part is eternal.
+5P40: The more perfection each thing has, the more it acts and the less it is acted on; and conversely, the more it acts, the more perfect it is.
+5P41: Even if we did not know that our mind is eternal, we would still regard as of the first importance morality, religion, and absolutely all the things we have shown (in Part IV) to be related to tenacity and nobility
+5P42: Blessedness is not the reward of virtue, but virtue itself; nor do we enjoy it because we restrain our lusts; on the contrary, because we enjoy it, we are able to restrain them.
