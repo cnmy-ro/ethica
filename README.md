@@ -26,6 +26,7 @@ Secondary sources:
 - Scholia and the references therein are ignored in the logical graph
 - TODO: 
 	- [ ] add logical graph and text for parts 4 and 5
+	- [ ] nicely display text in the map
 	- [ ] add text for all corollaries
 	- [ ] add proof chain feature
 
