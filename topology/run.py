@@ -11,7 +11,11 @@ np.random.seed(0)
 # Config
 
 TOPDOWN_LAYOUT = False
+HIDE_EDGES = False
 MAX_PART = 5
+MAX_LEVEL = 60
+SHOW_FILTER_MENU = False
+SHOW_SELECT_MENU = False
 
 
 # ---
@@ -36,8 +40,6 @@ def format_node_text(node_id, node_text):
 		if (i+1) % 10 == 0: 
 			formatted_word_list.append("\n")
 	formatted_node_text = " ".join(formatted_word_list)
-	print(node_text)
-	print(formatted_node_text)
 	return formatted_node_text
 
 def init_graph():
@@ -125,6 +127,8 @@ def update_node_pos(graph):
 		radius = 50 * ring_counter
 		node_list = [node_id for node_id in graph.nodes if graph.nodes[node_id]['level'] == level]
 		angle_offset = np.random.uniform(-np.pi, np.pi) # for stylistic purpose
+		# angle_offset = np.random.choice(np.linspace(-np.pi, np.pi, 8)) # for stylistic purpose
+		# angle_offset = np.pi / len(node_list) / 2 * np.random.choice([-1, 0, 1])
 		angles = np.linspace(-np.pi, np.pi, len(node_list)) + angle_offset
 		xs, ys = radius * np.cos(angles), radius * np.sin(angles)
 		for i, node_id in enumerate(node_list):
@@ -155,7 +159,24 @@ def update_node_style_attrs(graph):
 	return graph
 
 
-def run():
+def limit_levels(graph):
+	nodes_to_remove = []
+	for node_id in graph.nodes:
+		if graph.nodes[node_id]['level'] > MAX_LEVEL:
+			nodes_to_remove.append(node_id)
+	for node_id in nodes_to_remove:
+		graph.remove_node(node_id)
+	return graph
+
+
+def run(args):
+
+	##
+	# global MAX_PART 
+	# MAX_PART = args.mp
+	# global MAX_LEVEL
+	# MAX_LEVEL = args.ml
+	##
 
 	# Build graph
 	graph = init_graph()
@@ -163,14 +184,24 @@ def run():
 	graph = update_node_pos(graph)
 	graph = update_node_style_attrs(graph)
 
+	# Filter graph
+	graph = limit_levels(graph)
+
 	# Show graph
-	net = Network(directed=True, layout=TOPDOWN_LAYOUT, neighborhood_highlight=True, filter_menu=True, select_menu=True)
+	net = Network(directed=True, layout=TOPDOWN_LAYOUT, neighborhood_highlight=True, filter_menu=SHOW_FILTER_MENU, select_menu=SHOW_SELECT_MENU)
 	net.from_nx(graph)
-	net.show('ethica_map.html', notebook=False)
+	net.show('topology.html', notebook=False)
 
 
 # ---
 # Run
 
 if __name__ == '__main__':
-	run()
+	
+	import argparse
+	parser = argparse.ArgumentParser()
+	parser.add_argument("-mp", type=int)
+	parser.add_argument("-ml", type=int)
+	args = parser.parse_args()
+	
+	run(args)

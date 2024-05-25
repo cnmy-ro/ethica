@@ -14,19 +14,23 @@ List of translations:
 - Parkinson - Ethics (Oxford Philosophical Texts 2000)
 - White, Stirling - Ethics (Wordsworth Classics 2001)
 
-Secondary sources:
-- Nadler - Spinoza's Ethics: An Introduction
-- Nadler - Spinoza: A Life
-- Hampshire - Spinoza
 
+## Topology
 
-## Map
-- Overall topology, proof chain for a given proposition, etc.
-- The logical graph reflects the way Spinoza derives the propositions in the demonstrations
-- Scholia and the references therein are ignored in the logical graph
+Interactive logical graph of Ethics.
+
+- Notes:
+	- The logical graph reflects the way Spinoza derives the propositions in the demonstrations
+	- Scholia and the references therein are ignored in the logical graph
+
 - TODO:
 	- [ ] add text for all corollaries
 	- [ ] add proof chain feature
 
 
-## Spiritual Automaton
+## Automata Ethicae
+
+Spinozistic text brought to life using interactive LLMs.
+
+- TODO:
+	- [ ] develop concept
