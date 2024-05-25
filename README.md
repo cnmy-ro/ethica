@@ -20,7 +20,7 @@ List of translations:
 Interactive logical graph of Ethics.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cnmy-ro/ethica/main/assets/images/sceenshot_1P7.png">
+  <img src="https://raw.githubusercontent.com/cnmy-ro/ethica/main/assets/images/sceenshot_1P7.png" width="400" height="400">
 </p>
 
 - Notes:
