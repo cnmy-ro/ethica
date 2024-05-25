@@ -44,9 +44,9 @@ def format_node_text(node_id, node_text):
 
 def init_graph():
 
-	with open("./logical.yaml") as fs:
+	with open("../assets/ethics/logical.yaml") as fs:
 		logical_graph = yaml.safe_load(fs)
-	with open("./text-en-curley.yaml") as fs:
+	with open("../assets/ethics/text-en-curley.yaml") as fs:
 		text = yaml.safe_load(fs)
 	
 	relevant_node_ids = [node_id for node_id in logical_graph.keys() if get_part(node_id) <= MAX_PART]

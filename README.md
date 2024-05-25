@@ -19,6 +19,10 @@ List of translations:
 
 Interactive logical graph of Ethics.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cnmy-ro/ethica/main/assets/images/sceenshot_1P7.png">
+</p>
+
 - Notes:
 	- The logical graph reflects the way Spinoza derives the propositions in the demonstrations
 	- Scholia and the references therein are ignored in the logical graph
