@@ -22,12 +22,12 @@ Interactive logical graph of Ethics.
 ## Automata Ethicae (WIP)
 
 Dual goal:
-1. Exploring Spinozistic text using interactive LLMs
-2. Exploring LLMs using the logical structure of Spinoza's metaphysics as an example world model
+1. Exploring Spinozistic text using LLMs
+2. Exploring LLMs using Spinoza's metaphysical system as a world model
 
 Questions:
-- Given only the (structured) text, to what level of coherence can the model represent Spinoza's abstractions (e.g. substance, attribute, mode, causation, finitude, infinity) and their logical relationship?
-
+- Given only the (structured) text, to what level of coherence can the LLM represent Spinoza's abstractions (e.g. substance, attribute, mode, causation, infinity, finitude) and their logical relationship?
+- Can the LLM, reasoning from the metaphysical principles, have productive dialogue on epistemological and moral problems?
 
 
 ## Resources
@@ -44,7 +44,7 @@ English translations:
 - White, Stirling - Ethics (Wordsworth Classics 2001)
 
 Secondary literature:
-- Stuart Hampshire - Spinoza
+- Stuart Hampshire - Spinoza (Penguin 1951)
 - Stanford Encyclopedia articles:
 	- [Spinoza's Modal Metaphysics](https://plato.stanford.edu/entries/spinoza-modal/)
 	- [Spinoza’s Theory of Attributes](https://plato.stanford.edu/entries/spinoza-attributes/)
@@ -52,4 +52,6 @@ Secondary literature:
 	- [Spinoza’s Psychological Theory](https://plato.stanford.edu/entries/spinoza-psychological/)
 	- [Spinoza’s Physical Theory](https://plato.stanford.edu/entries/spinoza-physics/)
 	- [Seventeenth-Century Theories of Consciousness](https://plato.stanford.edu/entries/consciousness-17th/)
+	- [Continental Rationalism](https://plato.stanford.edu/entries/continental-rationalism/)
 	- [Principle of Sufficient Reason](https://plato.stanford.edu/entries/sufficient-reason/)
+	- [Leibniz's Modal Metaphysics](https://plato.stanford.edu/entries/leibniz-modal/)
